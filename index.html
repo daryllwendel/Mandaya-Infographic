@@ -246,16 +246,17 @@
             transform: translateX(-50%);
         }
 
-        .person-body {
+       .person-body {
             width: 80px;
             height: 90px;
-            background: rgba(139, 115, 85, 0.6);
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            border-radius: 40px 40px 0 0;
+            object-fit: cover;
+            border-radius: 40px 40px 0 0; /* optional curved top */
         }
+
 
         .traditional-pattern {
             position: absolute;
@@ -446,9 +447,7 @@
                     <div class="traditional-pattern"></div>
                     <div class="person-icon">
                         <div class="person-head"></div>
-                        <div class="person-body">
-                            <img src="download1.jpg" class="person-body" alt="Mandaya Image">
-                        </div>
+                        <img src="download1.jpg" class="person-body" alt="Mandaya">
                     </div>
                     <span style="position: relative; z-index: 2; font-weight: bold;">Mandaya Dancer<br>in Traditional Attire</span>
                 </div>
@@ -522,5 +521,6 @@
 </body>
 
 </html>
+
 
 
