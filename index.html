@@ -197,13 +197,11 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
 
-        /* Image Circle with person placeholder */
+        /* Person Circle Images */
         .person-circle {
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #c19a6b 0%, #8b7355 100%);
-            border: 10px solid #f4e8d8;
             overflow: hidden;
             position: absolute;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -212,51 +210,11 @@
             justify-content: center;
         }
 
-        .person-placeholder {
+        .person-photo {
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 50% 40%, #d4a574 0%, #a0826d 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #f4e8d8;
-            text-align: center;
-            padding: 30px;
-            font-size: 0.9em;
-            position: relative;
-        }
-
-        /* Stylized person silhouette */
-        .person-icon {
-            width: 100px;
-            height: 140px;
-            position: relative;
-            margin-bottom: 15px;
-        }
-
-        .person-head {
-            width: 50px;
-            height: 50px;
-            background: rgba(139, 115, 85, 0.6);
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-       .person-body {
-            width: 80px;
-            height: 90px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
             object-fit: cover;
-            border-radius: 40px 40px 0 0; /* optional curved top */
         }
-
 
         .traditional-pattern {
             position: absolute;
@@ -443,14 +401,7 @@
         <!-- Culture & Tradition Section -->
         <div class="section-with-image">
             <div class="person-circle circle-top-right">
-                <div class="person-placeholder">
-                    <div class="traditional-pattern"></div>
-                    <div class="person-icon">
-                        <div class="person-head"></div>
-                        <img src="download1.jpg" class="person-body" alt="Mandaya">
-                    </div>
-                    <span style="position: relative; z-index: 2; font-weight: bold;">Mandaya Dancer<br>in Traditional Attire</span>
-                </div>
+                <img src="download1.jpg" class="person-photo" alt="Mandaya Dancer">
             </div>
             
             <div class="content-box content-right">
@@ -464,14 +415,7 @@
         <!-- Attire & Weaving Section -->
         <div class="section-with-image">
             <div class="person-circle circle-bottom-left">
-                <div class="person-placeholder">
-                    <div class="traditional-pattern"></div>
-                    <div class="person-icon">
-                        <div class="person-head"></div>
-                        <div class="person-body"></div>
-                    </div>
-                    <span style="position: relative; z-index: 2; font-weight: bold;">Mandaya Elder<br>in Traditional Dress</span>
-                </div>
+                <img src="mandaya2.jpg" class="person-photo" alt="Mandaya Elder">
             </div>
 
             <!-- Bottom Leaf Decorations -->
@@ -494,33 +438,7 @@
             </div>
         </div>
 
-        <!-- Additional person circle for the family -->
+        <!-- Family Section -->
         <div class="section-with-image" style="margin-bottom: 80px;">
             <div class="person-circle circle-bottom-center">
-                <div class="person-placeholder">
-                    <div class="traditional-pattern"></div>
-                    <div style="display: flex; gap: 15px; align-items: flex-end; margin-bottom: 15px;">
-                        <div class="person-icon" style="width: 60px; height: 100px;">
-                            <div class="person-head" style="width: 35px; height: 35px;"></div>
-                            <div class="person-body" style="width: 50px; height: 65px;"></div>
-                        </div>
-                        <div class="person-icon" style="width: 40px; height: 70px;">
-                            <div class="person-head" style="width: 25px; height: 25px;"></div>
-                            <div class="person-body" style="width: 35px; height: 45px;"></div>
-                        </div>
-                        <div class="person-icon" style="width: 60px; height: 100px;">
-                            <div class="person-head" style="width: 35px; height: 35px;"></div>
-                            <div class="person-body" style="width: 50px; height: 65px;"></div>
-                        </div>
-                    </div>
-                    <span style="position: relative; z-index: 2; font-weight: bold;">Mandaya Family<br>in Traditional Garments</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
-
-
-
+               
