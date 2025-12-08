@@ -66,6 +66,10 @@ body {
     align-items: center;
 }
 
+.culture-left {
+    flex: 1;
+}
+
 .img-culture {
     width: 100%;
     border-radius: 12px;
@@ -117,6 +121,118 @@ body {
     text-align: justify;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    /* Header responsive */
+    .title {
+        font-size: 32px;
+    }
+
+    .mandaya {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    .img-top {
+        width: 150px;
+        margin: 5px;
+    }
+
+    .brown-box {
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    /* Culture section stacks vertically */
+    .culture {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .culture-right h3 {
+        font-size: 20px;
+    }
+
+    .culture-right p {
+        font-size: 14px;
+    }
+
+    /* Attire section responsive */
+    .attire {
+        margin-top: 40px;
+    }
+
+    .img-attire-left,
+    .img-attire-right {
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .attire-text {
+        padding: 15px 0;
+    }
+
+    .attire-text h3 {
+        font-size: 20px;
+    }
+
+    .attire-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .mandaya {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .img-top {
+        width: 120px;
+        float: none;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .brown-box {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .culture {
+        margin-top: 25px;
+    }
+
+    .culture-right h3,
+    .attire-text h3 {
+        font-size: 18px;
+    }
+
+    .culture-right p,
+    .attire-text p {
+        font-size: 13px;
+    }
+
+    .attire {
+        margin-top: 30px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -133,8 +249,8 @@ body {
         <div class="brown-box">
             <p>
                 The Mandaya are an indigenous group found mainly in Davao Oriental and 
-                Compostela Valley in Mindanao. Their name means “first people upstream or in 
-                the upland.” They are known for their deep connection to nature, spiritual 
+                Compostela Valley in Mindanao. Their name means "first people upstream or in 
+                the upland." They are known for their deep connection to nature, spiritual 
                 traditions, and strong sense of community. The Mandaya practice a mix of 
                 animism and Christianity, honoring spirits of the land and ancestors through 
                 rituals, dances, and chants.
@@ -180,5 +296,3 @@ body {
 
 </body>
 </html>
-
-
