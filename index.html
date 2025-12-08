@@ -13,16 +13,35 @@
 
         body {
             font-family: "Poppins", sans-serif;
-            background: linear-gradient(135deg, #8b7355 0%, #a89168 100%);
+            background: linear-gradient(135deg, rgba(139, 115, 85, 0.95) 0%, rgba(168, 145, 104, 0.95) 100%),
+                        url('https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d7?w=1200') center/cover;
             color: white;
+            background-attachment: fixed;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: linear-gradient(180deg, #9b8b6b 0%, #8a7a5a 50%, #6d5d3d 100%);
+            background: linear-gradient(180deg, rgba(155, 139, 107, 0.95) 0%, rgba(138, 122, 90, 0.95) 50%, rgba(109, 93, 61, 0.95) 100%);
             position: relative;
             overflow: hidden;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                url('https://images.unsplash.com/photo-1583878715879-38c8f9nr7c7c?w=800') top left / 40% auto no-repeat,
+                url('https://images.unsplash.com/photo-1463320898484-cdee8141b920?w=800') top right / 35% auto no-repeat,
+                url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800') bottom left / 30% auto no-repeat,
+                url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800') bottom right / 35% auto no-repeat;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
         }
 
         /* Decorative borders */
@@ -51,6 +70,19 @@
         .header {
             padding: 80px 40px 40px;
             position: relative;
+            z-index: 1;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1509233725247-49e657c54213?w=1200') center/cover;
+            opacity: 0.15;
+            z-index: -1;
         }
 
         .header-content {
@@ -126,6 +158,19 @@
         .culture {
             padding: 60px 40px;
             position: relative;
+            z-index: 1;
+        }
+
+        .culture::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200') center/cover;
+            opacity: 0.12;
+            z-index: -1;
         }
 
         .culture-content {
@@ -170,6 +215,19 @@
         .attire {
             padding: 60px 40px 80px;
             position: relative;
+            z-index: 1;
+        }
+
+        .attire::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1590736969955-71cc94901144?w=1200') center/cover;
+            opacity: 0.1;
+            z-index: -1;
         }
 
         .attire-content {
@@ -348,7 +406,7 @@
                     <circle cx="55" cy="45" r="3" fill="#ff6b00"/>
                     <path d="M42,55 Q50,60 58,55" stroke="#ff6b00" stroke-width="2" fill="none"/>
                 </svg>
-                <img src="download2.png" class="circle-img" alt="Mandaya elder">
+                <img src="https://images.unsplash.com/photo-1583521214690-73421a1829a9?w=800" class="circle-img" alt="Mandaya elder">
             </div>
         </div>
     </section>
@@ -362,7 +420,7 @@
     <section class="culture">
         <div class="culture-content">
             <div class="culture-image-wrapper">
-                <img src="download1.jpg" class="large-circle-img" alt="Mandaya dancer">
+                <img src="https://images.unsplash.com/photo-1604608672516-f1b9b1f97548?w=800" class="large-circle-img" alt="Mandaya dancer">
             </div>
             <div class="culture-text">
                 <h3>CULTURE & TRADITION</h3>
@@ -398,7 +456,7 @@
                 </p>
             </div>
             <div>
-                <img src="download4.jpg" class="attire-image" alt="Mandaya family">
+                <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800" class="attire-image" alt="Mandaya family">
             </div>
         </div>
     </section>
