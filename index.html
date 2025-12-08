@@ -91,25 +91,27 @@ body {
 /* ATTIRE & WEAVING */
 .attire {
     margin-top: 60px;
-    text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.img-attire-left {
-    width: 45%;
-    float: left;
-    border-radius: 12px;
+.attire-images {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
+.img-attire-left,
 .img-attire-right {
-    width: 45%;
-    float: right;
+    width: 48%;
     border-radius: 12px;
+    object-fit: cover;
 }
 
 .attire-text {
-    clear: both;
-    padding: 30px 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .attire-text h3 {
@@ -172,11 +174,14 @@ body {
         margin-top: 40px;
     }
 
+    .attire-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .img-attire-left,
     .img-attire-right {
         width: 100%;
-        float: none;
-        margin-bottom: 15px;
     }
 
     .attire-text {
@@ -277,7 +282,10 @@ body {
 
     <!-- ATTIRE & WEAVING -->
     <section class="attire">
-        <img src="download3.jpg" class="img-attire-left" alt="Mandaya man with wardrobe">
+        <div class="attire-images">
+            <img src="download3.jpg" class="img-attire-left" alt="Mandaya man with wardrobe">
+            <img src="download4.jpg" class="img-attire-right" alt="Mandaya family">
+        </div>
 
         <div class="attire-text">
             <h3>ATTIRE & WEAVING</h3>
@@ -288,8 +296,6 @@ body {
                 that represent courage and tribal identity.
             </p>
         </div>
-
-        <img src="download4.jpg" class="img-attire-right" alt="Mandaya family">
     </section>
 
 </div>
